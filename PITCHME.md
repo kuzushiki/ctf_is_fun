@@ -48,9 +48,7 @@ nullcon HackIM2020にて出題された
 
 ---
 
-### ゾンビの死亡判定をいじる
-
-@snap[west span-40 text-center]
+@snap[west span-50 text-center]
 ```
 private void TakeDamage(float damage)
 {
@@ -64,7 +62,7 @@ private void TakeDamage(float damage)
 ```
 @snapend
 
-@snap[east span-40 text-center]
+@snap[east span-50 text-center]
 ```
 private void TakeDamage(float damage)
 {
