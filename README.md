@@ -1,5 +1,7 @@
 # CTFで学ぶゲームチート入門
 
+[こちら](https://gitpitch.com/kuzushiki/ctf_is_fun)からスライドにアクセスしてください。
+
 CTF＆ゲームチートの楽しさを知ってもらうために作りました。
 
 nullcon HackIM2020で出題されたZelda Adventureという問題カテゴリから、３問を選んで解説をしています。
