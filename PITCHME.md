@@ -1,5 +1,5 @@
 ### CTFで学ぶゲームチート入門
-<br /><br />
+<br />
 @kuzushiki
 
 ---
@@ -155,6 +155,6 @@ private void MoveCharacter()
 <br />
 @snap[text-left]
 CTFを通して、**ゲームチート**の手法を学びました
-<br /><br />
+<br />
 CTFの**楽しさ**が少しでも伝われば幸いです
 @snapend
