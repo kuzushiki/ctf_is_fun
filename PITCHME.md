@@ -7,6 +7,7 @@
 ### 自己紹介
 kuzushiki（クズシキ）
 <br />
+<br />
 @snap[text-left]
 - CTFが好き
 - 4月から某セキュリティ会社に就職予定
@@ -17,6 +18,7 @@ kuzushiki（クズシキ）
 ### CTF?
 **C**apture **t**he **f**lagの略
 <br />
+<br />
 @snap[text-left]
 「セキュリティ技術」を競うコンテスト  
 ゲーム要素が強く、**楽しい!**
@@ -25,12 +27,12 @@ kuzushiki（クズシキ）
 ---
 
 ### 今日のお題
-@snap[text-left]
-nullcon HackIM2020にて出題された**Zelda**という問題
 
+nullcon HackIM2020にて出題された**Zelda**という問題
+<br />
 （全４問中３問解説）
 <br />  
-@snapend
+
 ![ダウンロード](https://user-images.githubusercontent.com/50363796/76391493-f8ef9200-63b2-11ea-8910-84e0d33523c4.jpg)
 
 ---
@@ -84,6 +86,7 @@ private void TakeDamage(float damage)
 @snap[text-left]
 オブジェクトごとに`Body Type`が設定されている
 <br />
+<br />
 - `Dynamic`: どの`Body Type`とも衝突する
 - `Kynematic`: `Dynamic`とのみ衝突する
 - `Static`: `Dynamic`とのみ衝突する（**動かせない！**）
@@ -129,7 +132,9 @@ private void MoveCharacter()
 }
 ```
 <br />
-つまり、`現在位置 + 移動のベクトル * 速度 * 時間`となっている
+ようするに、以下のようになっている
+<br />
+`現在位置 + 移動のベクトル * 速度 * 時間`
 
 ---
 
@@ -150,5 +155,5 @@ private void MoveCharacter()
 ### まとめ
 <br />
 CTFに出題された問題を通して、**ゲームチート**の手法を学びました
-<br />
+<br /><br />
 CTFの**楽しさ**が少しでも伝われば幸いです
