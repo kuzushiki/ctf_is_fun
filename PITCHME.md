@@ -92,7 +92,7 @@ private void TakeDamage(float damage)
 
 ---
 
-### キャラクタの`body Type`をいじる
+### キャラの`body Type`をいじる
 <br />
 @snap[text-left]
 `UnityEngine.Physics2DModule.dll`
@@ -138,7 +138,7 @@ private void MoveCharacter()
 
 ---
 
-### キャラクターの移動速度をいじる
+### キャラの移動速度をいじる
 <br />
 ```C#
 private void MoveCharacter()
