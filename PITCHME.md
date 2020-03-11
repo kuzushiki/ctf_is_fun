@@ -38,11 +38,44 @@ nullcon HackIM2020にて出題された
 
 ---
 
-### ゲームチートのやりかた(Unity)
-ゲームフォルダ内の`Assembly-CSharp.dll`を、
+### ゲームチートのやりかた
+(Unityの場合)
 
-`dnSpy`という.NET debuggerでいじる
+1.ゲームフォルダ内の`Assembly-CSharp.dll`を、
+2.`dnSpy`という.NET debuggerでいじる
 
 [dnSpyのリポジトリ](https://github.com/0xd4d/dnSpy)
+
+---
+
+### ゾンビの死亡判定
+ありました
+```
+private void TakeDamage(float damage)
+{
+	this.health -= damage;
+	if (this.health <= 0f)
+	{
+		base.StartCoroutine(this.ShowSome());
+		base.gameObject.SetActive(false);
+	}
+}
+```
+
+---
+
+### 判定をいじる
+```
+private void TakeDamage(float damage)
+{
+	this.health -= damage;
+	if (this.health >= 0f)
+	{
+		base.StartCoroutine(this.ShowSome());
+		base.gameObject.SetActive(false);
+	}
+}
+```
+@[4](体力が0以上なら死亡)
 
 ---
