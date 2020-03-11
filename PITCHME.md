@@ -144,11 +144,11 @@ private void MoveCharacter()
 private void MoveCharacter()
 {
 	this.change.Normalize();
-	// 移動速度を10倍に
+	// 移動速度を5倍に
 	// this.myRigidbody.MovePosition(base.transform.position
 	// + this.change * this.speed * Time.deltaTime);
 	this.myRigidbody.MovePosition(base.transform.position
-	+ this.change * this.speed * Time.deltaTime * 10f);
+	+ this.change * this.speed * Time.deltaTime * 5f);
 }
 ```
 
