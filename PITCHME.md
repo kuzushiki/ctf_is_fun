@@ -48,10 +48,12 @@ nullcon HackIM2020にて出題された
 
 ---
 
+@snap[north span-100]
 ### 死亡判定をいじる
+@snapend
 
-@snap[north-west span-70]
-```C#
+@snap[west span-70]
+```C# zoom-05
 private void TakeDamage(float damage)
 {
 	this.health -= damage;
@@ -64,12 +66,12 @@ private void TakeDamage(float damage)
 ```
 @snapend
 
-@snap[south-east span-70]
-```C#
+@snap[east span-70]
+```C# zoom-05
 private void TakeDamage(float damage)
 {
 	this.health -= damage;
-	if (this.health >= 0f) # 体力が0以上なら死亡
+	if (this.health >= 0f) // 体力が0以上なら死亡
 	{
 		base.StartCoroutine(this.ShowSome());
 		base.gameObject.SetActive(false);
