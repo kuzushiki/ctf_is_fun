@@ -48,8 +48,7 @@ nullcon HackIM2020にて出題された
 
 ---
 
-### ゾンビの死亡判定
-ありました
+### ゾンビの死亡判定をいじる
 ```
 private void TakeDamage(float damage)
 {
@@ -61,10 +60,6 @@ private void TakeDamage(float damage)
 	}
 }
 ```
-
----
-
-### 判定をいじる
 ```
 private void TakeDamage(float damage)
 {
@@ -75,7 +70,6 @@ private void TakeDamage(float damage)
 		base.gameObject.SetActive(false);
 	}
 }
-```
-@[4](体力が0以上なら死亡)
+```@[4](体力が0以上なら死亡)
 
 ---
