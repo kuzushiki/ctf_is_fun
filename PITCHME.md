@@ -95,9 +95,8 @@ private void TakeDamage(float damage)
 ### キャラクタの`body Type`をいじる
 <br />
 @snap[text-left]
-今回は`UnityEngine.Physics2DModule.dll`
+`UnityEngine.Physics2DModule.dll`
 @snapend
-<br />
 ```C#
 public bool isKinematic
 	{
