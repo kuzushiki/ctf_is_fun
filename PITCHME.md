@@ -86,13 +86,13 @@ private void TakeDamage(float damage)
 <br />
 - `Dynamic`: どの`Body Type`とも衝突する
 - `Kynematic`: `Dynamic`とのみ衝突する
-- `Static`: `Dynamic`とのみ衝突する（が、**動かせない**）
+- `Static`: `Dynamic`とのみ衝突する（**動かせない！**）
 <br />
-結論：`Kynematic`に設定すれば良い！
+結論->**`Kynematic`**に設定すれば良い！
 
 ---
 
-### キャラクターの`body Type`をいじる
+### キャラクタの`body Type`をいじる
 <br />
 ```C#
 public bool isKinematic
@@ -109,6 +109,8 @@ public bool isKinematic
 		}
 	}
 ```
+
+---
 
 ### Zelda crossing the land's end
 **世界の果てに行け！**  
@@ -142,6 +144,8 @@ private void MoveCharacter()
 	this.myRigidbody.MovePosition(base.transform.position + this.change * this.speed * Time.deltaTime * 10f);
 }
 ```
+
+---
 
 ### まとめ
 <br />
