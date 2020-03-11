@@ -19,10 +19,8 @@ kuzushiki（クズシキ）
 **C**apture **t**he **f**lagの略
 <br />
 <br />
-@snap[text-left]
 「セキュリティ技術」を競うコンテスト  
 ゲーム要素が強く、**楽しい!**
-@snapend
 
 ---
 
@@ -157,7 +155,7 @@ private void MoveCharacter()
 ### まとめ
 <br />
 @snap[text-left]
-CTFに出題された問題を通して、**ゲームチート**の手法を学びました
+CTFの問題を通して、**ゲームチート**の手法を学びました
 <br /><br />
 CTFの**楽しさ**が少しでも伝われば幸いです
 @snapend
