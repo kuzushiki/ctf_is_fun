@@ -1,13 +1,12 @@
 ### CTFで学ぶゲームチート入門
-<br />
+<br /><br />
 @kuzushiki
 
 ---
 
 ### 自己紹介
 kuzushiki（クズシキ）
-<br />
-<br />
+<br /><br />
 @snap[text-left]
 - CTFが好き
 - 4月から某セキュリティ会社に就職予定
@@ -17,8 +16,7 @@ kuzushiki（クズシキ）
 
 ### CTFって?
 **C**apture **t**he **f**lagの略
-<br />
-<br />
+<br /><br />
 @snap[text-left]
 - 「セキュリティ技術」を競うコンテスト  
 - ゲーム要素が強く、**楽しい!**
@@ -45,8 +43,7 @@ nullcon HackIM2020にて出題された**Zelda**という問題
 
 ### ゲームチートのやりかた
 (Unityの場合)
-<br />
-<br />
+<br /><br />
 @snap[text-left]
 1.ゲームフォルダ内の`Assembly-CSharp.dll`を、
 2.`dnSpy`という.NET debuggerでいじる
@@ -91,7 +88,7 @@ private void TakeDamage(float damage)
 - `Static`: `Dynamic`とのみ衝突する（**動かせない！**）
 @snapend
 <br />
-結論->**`Kynematic`**に設定すれば良い！
+結論 -> **`Kynematic`**に設定すれば良い！
 
 ---
 
@@ -157,7 +154,7 @@ private void MoveCharacter()
 ### まとめ
 <br />
 @snap[text-left]
-CTFの問題を通して、**ゲームチート**の手法を学びました
+CTFを通して、**ゲームチート**の手法を学びました
 <br /><br />
 CTFの**楽しさ**が少しでも伝われば幸いです
 @snapend
