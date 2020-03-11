@@ -48,7 +48,7 @@ nullcon HackIM2020にて出題された
 
 ---
 
-@snap[west span-45 text-08]
+@snap[west span-45 text-05]
 ```
 private void TakeDamage(float damage)
 {
@@ -62,7 +62,7 @@ private void TakeDamage(float damage)
 ```
 @snapend
 
-@snap[east span-45 text-08]
+@snap[east span-45 text-05]
 ```
 private void TakeDamage(float damage)
 {
