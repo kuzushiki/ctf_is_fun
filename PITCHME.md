@@ -4,9 +4,9 @@
 ---
 
 ### 自己紹介
+kuzushiki（クズシキ）  
+  
 @snap[text-left]
-kuzushiki（クズシキ）
-
 - CTFが好き
 - 4月から某セキュリティ会社に就職予定
 @snapend
@@ -14,11 +14,10 @@ kuzushiki（クズシキ）
 ---
 
 ### CTF?
-**C**apture **t**he **f**lag
-
 @snap[text-left]
-「セキュリティ技術」を競うコンテスト
-
+**C**apture **t**he **f**lag  
+  
+「セキュリティ技術」を競うコンテスト  
 ゲーム要素が強く、**楽しい!**
 @snapend
 
@@ -26,39 +25,36 @@ kuzushiki（クズシキ）
 
 ### 今日のお題
 @snap[text-left]
-nullcon HackIM2020にて出題された
-
-**Zelda**という問題
-
-（全４問中３問解説）
-
-![ダウンロード](https://user-images.githubusercontent.com/50363796/76391493-f8ef9200-63b2-11ea-8910-84e0d33523c4.jpg)
+nullcon HackIM2020にて出題された  
+**Zelda**という問題  
+（全４問中３問解説）  
+  
 @snapend
+![ダウンロード](https://user-images.githubusercontent.com/50363796/76391493-f8ef9200-63b2-11ea-8910-84e0d33523c4.jpg)
 
 ---
 
 ### Zelda and the Zombies
-**ゾンビを倒せ！**
-
-@snap[south text-left]
+**ゾンビを倒せ！**  
+  
 もちろん普通にプレイしても倒せない
-@snapend
 
 ---
 
 ### ゲームチートのやりかた
-(Unityの場合)
+(Unityの場合)  
+  
 @snap[text-left]
 1.ゲームフォルダ内の`Assembly-CSharp.dll`を、
-2.`dnSpy`という.NET debuggerでいじる
-
+2.`dnSpy`という.NET debuggerでいじる  
+  
 [dnSpyのリポジトリ](https://github.com/0xd4d/dnSpy)
 @snapend
 
 ---
 
-### 死亡判定をいじる
-
+### 死亡判定をいじる  
+  
 ```C#
 private void TakeDamage(float damage)
 {
