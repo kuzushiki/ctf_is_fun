@@ -48,7 +48,10 @@ nullcon HackIM2020にて出題された
 
 ---
 
-@snap[west span-45 text-02]
+### 死亡判定をいじる
+
+@snap[west span-45]
+@code[C# zoom-07]
 ```
 private void TakeDamage(float damage)
 {
@@ -62,7 +65,8 @@ private void TakeDamage(float damage)
 ```
 @snapend
 
-@snap[east span-45 text-02]
+@snap[east span-45]
+@code[C# zoom-07]
 ```
 private void TakeDamage(float damage)
 {
