@@ -15,7 +15,7 @@ kuzushiki（クズシキ）
 
 ---
 
-### CTF?
+### CTFって?
 **C**apture **t**he **f**lagの略
 <br />
 <br />
@@ -31,8 +31,7 @@ kuzushiki（クズシキ）
 nullcon HackIM2020にて出題された**Zelda**という問題
 <br />
 （全４問中３問解説）
-<br />  
-
+<br /><br />
 ![ダウンロード](https://user-images.githubusercontent.com/50363796/76391493-f8ef9200-63b2-11ea-8910-84e0d33523c4.jpg)
 
 ---
@@ -63,7 +62,7 @@ nullcon HackIM2020にて出題された**Zelda**という問題
 private void TakeDamage(float damage)
 {
 	this.health -= damage;
-	// 体力が0以上なら死亡する
+	// 体力が0以上なら死亡するように
 	// if (this.health <= 0f)
 	if (this.health >= 0f) 
 	{
@@ -86,10 +85,11 @@ private void TakeDamage(float damage)
 @snap[text-left]
 オブジェクトごとに`Body Type`が設定されている
 <br />
-<br />
+@snap[text-08]
 - `Dynamic`: どの`Body Type`とも衝突する
 - `Kynematic`: `Dynamic`とのみ衝突する
 - `Static`: `Dynamic`とのみ衝突する（**動かせない！**）
+@snapend
 <br />
 結論->**`Kynematic`**に設定すれば良い！
 
@@ -106,7 +106,7 @@ public bool isKinematic
 		}
 		set
 		{
-			// 常時Kinematicにする
+			// 常時Kinematicに
 			// this.bodyType = ((!value) ? RigidbodyType2D.Dynamic : RigidbodyType2D.Kinematic);
 			this.bodyType = RigidbodyType2D.Kinematic;
 		}
@@ -132,8 +132,6 @@ private void MoveCharacter()
 }
 ```
 <br />
-ようするに、以下のようになっている
-<br />
 `現在位置 + 移動のベクトル * 速度 * 時間`
 
 ---
@@ -145,8 +143,10 @@ private void MoveCharacter()
 {
 	this.change.Normalize();
 	// 移動速度を10倍に
-	// this.myRigidbody.MovePosition(base.transform.position + this.change * this.speed * Time.deltaTime);
-	this.myRigidbody.MovePosition(base.transform.position + this.change * this.speed * Time.deltaTime * 10f);
+	// this.myRigidbody.MovePosition(base.transform.position
+	// + this.change * this.speed * Time.deltaTime);
+	this.myRigidbody.MovePosition(base.transform.position
+	+ this.change * this.speed * Time.deltaTime * 10f);
 }
 ```
 
@@ -154,6 +154,8 @@ private void MoveCharacter()
 
 ### まとめ
 <br />
+@snap[text-left]
 CTFに出題された問題を通して、**ゲームチート**の手法を学びました
 <br /><br />
 CTFの**楽しさ**が少しでも伝われば幸いです
+@snapend
