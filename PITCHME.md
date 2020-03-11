@@ -50,9 +50,8 @@ nullcon HackIM2020にて出題された
 
 ### 死亡判定をいじる
 
-@snap[west span-45]
-@code[C# zoom-07]
-```
+@snap[north-west span-70]
+```C#
 private void TakeDamage(float damage)
 {
 	this.health -= damage;
@@ -63,12 +62,10 @@ private void TakeDamage(float damage)
 	}
 }
 ```
-@codeend
 @snapend
 
-@snap[east span-45]
-@code[C# zoom-07]
-```
+@snap[south-east span-70]
+```C#
 private void TakeDamage(float damage)
 {
 	this.health -= damage;
@@ -79,7 +76,6 @@ private void TakeDamage(float damage)
 	}
 }
 ```
-@codeend
 @snapend
 
 ---
