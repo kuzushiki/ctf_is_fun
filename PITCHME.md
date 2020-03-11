@@ -15,9 +15,9 @@ kuzushiki（クズシキ）
 ---
 
 ### CTF?
-@snap[text-left]
-**C**apture **t**he **f**lag
+**C**apture **t**he **f**lagの略
 <br />
+@snap[text-left]
 「セキュリティ技術」を競うコンテスト  
 ゲーム要素が強く、**楽しい!**
 @snapend
@@ -38,13 +38,14 @@ nullcon HackIM2020にて出題された**Zelda**という問題
 ### Zelda and the Zombies
 **ゾンビを倒せ！**  
 <br />
-もちろん普通にプレイしても倒せない
+普通にプレイしても倒せません
 
 ---
 
 ### ゲームチートのやりかた
 (Unityの場合)
-<br />  
+<br />
+<br />
 @snap[text-left]
 1.ゲームフォルダ内の`Assembly-CSharp.dll`を、
 2.`dnSpy`という.NET debuggerでいじる
@@ -60,8 +61,9 @@ nullcon HackIM2020にて出題された**Zelda**という問題
 private void TakeDamage(float damage)
 {
 	this.health -= damage;
+	// 体力が0以上なら死亡する
 	// if (this.health <= 0f)
-	if (this.health >= 0f) // 体力が0以上なら死亡
+	if (this.health >= 0f) 
 	{
 		base.StartCoroutine(this.ShowSome());
 		base.gameObject.SetActive(false);
@@ -70,3 +72,79 @@ private void TakeDamage(float damage)
 ```
 
 ---
+
+### Zelda at the Swamp
+**沼に侵入しろ！**  
+<br />
+衝突判定があるので入れません
+
+---
+
+### Unityの衝突判定の仕様
+@snap[text-left]
+オブジェクトごとに`Body Type`が設定されている
+<br />
+- `Dynamic`: どの`Body Type`とも衝突する
+- `Kynematic`: `Dynamic`とのみ衝突する
+- `Static`: `Dynamic`とのみ衝突する（が、**動かせない**）
+<br />
+結論：`Kynematic`に設定すれば良い！
+
+---
+
+### キャラクターの`body Type`をいじる
+<br />
+```C#
+public bool isKinematic
+	{
+		get
+		{
+			return this.bodyType == RigidbodyType2D.Kinematic;
+		}
+		set
+		{
+			// 常時Kinematicにする
+			// this.bodyType = ((!value) ? RigidbodyType2D.Dynamic : RigidbodyType2D.Kinematic);
+			this.bodyType = RigidbodyType2D.Kinematic;
+		}
+	}
+```
+
+### Zelda crossing the land's end
+**世界の果てに行け！**  
+<br />
+足が遅いので時間がかかります
+
+---
+
+### Unityの移動速度計算
+<br />
+```C#
+private void MoveCharacter()
+{
+	this.change.Normalize();
+	this.myRigidbody.MovePosition(base.transform.position + this.change * this.speed * Time.deltaTime);
+}
+```
+<br />
+つまり、`現在位置 + 移動のベクトル * 速度 * 時間`となっている
+
+---
+
+### キャラクターの移動速度をいじる
+<br />
+```C#
+private void MoveCharacter()
+{
+	this.change.Normalize();
+	// 移動速度を10倍に
+	// this.myRigidbody.MovePosition(base.transform.position + this.change * this.speed * Time.deltaTime);
+	this.myRigidbody.MovePosition(base.transform.position + this.change * this.speed * Time.deltaTime * 10f);
+}
+```
+
+### まとめ
+<br />
+CTFに出題された問題を通して、**ゲームチート**の手法を学びました
+<br />
+CTFの**楽しさ**が少しでも伝われば幸いです
