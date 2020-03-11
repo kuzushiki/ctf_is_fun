@@ -1,6 +1,6 @@
 # CTFで学ぶゲームチート入門
 
-[こちら](https://gitpitch.com/kuzushiki/ctf_is_fun)からスライドにアクセスしてください。
+スライドは[こちら](https://gitpitch.com/kuzushiki/ctf_is_fun)
 
 CTF＆ゲームチートの楽しさを知ってもらうために作りました。
 
