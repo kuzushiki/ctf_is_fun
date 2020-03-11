@@ -63,6 +63,7 @@ private void TakeDamage(float damage)
 	}
 }
 ```
+@codeend
 @snapend
 
 @snap[east span-45]
@@ -78,6 +79,7 @@ private void TakeDamage(float damage)
 	}
 }
 ```
+@codeend
 @snapend
 
 ---
