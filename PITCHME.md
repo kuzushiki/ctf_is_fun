@@ -107,7 +107,8 @@ public bool isKinematic
 		set
 		{
 			// 常時Kinematicに
-			// this.bodyType = ((!value) ? RigidbodyType2D.Dynamic : RigidbodyType2D.Kinematic);
+			// this.bodyType = ((!value) ?
+			// RigidbodyType2D.Dynamic : RigidbodyType2D.Kinematic);
 			this.bodyType = RigidbodyType2D.Kinematic;
 		}
 	}
@@ -128,7 +129,8 @@ public bool isKinematic
 private void MoveCharacter()
 {
 	this.change.Normalize();
-	this.myRigidbody.MovePosition(base.transform.position + this.change * this.speed * Time.deltaTime);
+	this.myRigidbody.MovePosition(base.transform.position 
+	+ this.change * this.speed * Time.deltaTime);
 }
 ```
 <br />
