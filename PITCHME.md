@@ -166,7 +166,6 @@ private void MoveCharacter()
 ### まとめ
 <br />
 @snap[text-left]
-- CTFを通して**ゲームチート**の手法を学びました |
-<br />
-- CTFの**楽しさ**が少しでも伝われば幸いです |
+- CTFを通してゲームチートの手法を学びました |
+- CTFの楽しさが少しでも伝われば幸いです |
 @snapend
