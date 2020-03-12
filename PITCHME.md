@@ -91,7 +91,7 @@ private void TakeDamage(float damage)
 - `Static`: `Dynamic`とのみ衝突する（**動かせない！**）
 @snapend
 <br />
-結論 -> **`Kynematic`**に設定すれば良い！
+結論 -> **`Kynematic`**に設定すれば良い！ |
 
 ---
 
@@ -166,7 +166,7 @@ private void MoveCharacter()
 ### まとめ
 <br />
 @snap[text-left]
-CTFを通して、**ゲームチート**の手法を学びました
+CTFを通して**ゲームチート**の手法を学びました |
 <br />
-CTFの**楽しさ**が少しでも伝われば幸いです
+CTFの**楽しさ**が少しでも伝われば幸いです |
 @snapend
