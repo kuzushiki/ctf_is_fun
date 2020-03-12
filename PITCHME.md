@@ -86,12 +86,12 @@ private void TakeDamage(float damage)
 オブジェクトごとに`Body Type`が設定されている
 <br />
 @snap[text-08]
-- Dynamic: どのBody Typeとも衝突する |
-- Kynematic: Dynamicとのみ衝突する |
-- Static: Dynamicとのみ衝突する（動かせない！） |
+- `Dynamic`: どのBody Typeとも衝突する |
+- `Kynematic`: Dynamicとのみ衝突する |
+- `Static`: Dynamicとのみ衝突する（動かせない！） |
 @snapend
 <br />
-- 結論 -> **Kynematic**に設定すれば良い！ |
+- 結論 -> `Kynematic`に設定すれば良い！ |
 
 ---
 
@@ -166,7 +166,7 @@ private void MoveCharacter()
 ### まとめ
 <br />
 - CTFを通してゲームチートの手法を学びました |
-<br />
+<br /><br />
 - CTFの楽しさが少しでも伝われば幸いです |
 
 ---
