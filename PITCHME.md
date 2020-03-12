@@ -69,6 +69,8 @@ private void TakeDamage(float damage)
 }
 ```
 
+@[6]
+
 ---
 
 ### Zelda at the Swamp
@@ -114,6 +116,8 @@ public bool isKinematic
 	}
 ```
 
+@[13]
+
 ---
 
 ### Zelda crossing the land's end
@@ -133,6 +137,9 @@ private void MoveCharacter()
 	+ this.change * this.speed * Time.deltaTime);
 }
 ```
+
+@[4-5]
+
 <br />
 `現在位置 + 移動のベクトル * 速度 * 時間`
 
@@ -151,6 +158,8 @@ private void MoveCharacter()
 	+ this.change * this.speed * Time.deltaTime * 5f);
 }
 ```
+
+@[7-8]
 
 ---
 
