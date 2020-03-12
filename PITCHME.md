@@ -59,8 +59,8 @@ nullcon HackIM2020にて出題された**Zelda**という問題
 private void TakeDamage(float damage)
 {
 	this.health -= damage;
-	// 体力が0以上なら死亡するように
 	// if (this.health <= 0f)
+	// 体力が0以上なら死亡するように
 	if (this.health >= 0f) 
 	{
 		base.StartCoroutine(this.ShowSome());
@@ -69,7 +69,8 @@ private void TakeDamage(float damage)
 }
 ```
 
-@[6]
+@[4](before)
+@[5-6](after)
 
 ---
 
@@ -108,15 +109,16 @@ public bool isKinematic
 		}
 		set
 		{
-			// 常時Kinematicに
 			// this.bodyType = ((!value) ?
 			// RigidbodyType2D.Dynamic : RigidbodyType2D.Kinematic);
+			// 常時Kinematicに
 			this.bodyType = RigidbodyType2D.Kinematic;
 		}
 	}
 ```
 
-@[13]
+@[9-10](before)
+@[11-12](after)
 
 ---
 
@@ -138,10 +140,7 @@ private void MoveCharacter()
 }
 ```
 
-@[4-5]
-
-<br />
-`現在位置 + 移動のベクトル * 速度 * 時間`
+@[4-5](`現在位置 + 移動のベクトル * 速度 * 時間`)
 
 ---
 
@@ -151,15 +150,16 @@ private void MoveCharacter()
 private void MoveCharacter()
 {
 	this.change.Normalize();
-	// 移動速度を5倍に
 	// this.myRigidbody.MovePosition(base.transform.position
 	// + this.change * this.speed * Time.deltaTime);
+	// 移動速度を5倍に
 	this.myRigidbody.MovePosition(base.transform.position
 	+ this.change * this.speed * Time.deltaTime * 5f);
 }
 ```
 
-@[7-8]
+@[4-5](before)
+@[6-8](after)
 
 ---
 
